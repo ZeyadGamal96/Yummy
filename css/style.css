@@ -1,0 +1,518 @@
+body {
+    background-color: #0D0D0D;
+    overflow: hidden;
+}
+
+/* loading */
+.loading-screen {
+    z-index: 9999;
+    color: #FECC11;
+    display: flex;
+}
+
+/* loading */
+
+/* side_navbar */
+.sidenav {
+    display: flex;
+    position: fixed;
+    height: 100vh;
+    left: -260px;
+    top: 0;
+    bottom: 0;
+}
+
+.nav {
+    background-color: #0D0D0D;
+    width: 260px;
+    padding-top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav a {
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
+.nav a:hover {
+    color: #FECC11;
+}
+
+.open {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 70px;
+}
+
+#hide {
+    display: none;
+}
+
+#view {
+    display: block;
+}
+
+.open i {
+    color: #0D0D0D;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.open img {
+    width: 50px;
+    padding-top: 20px;
+}
+
+.nav .social {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav p {
+    color: white;
+    padding-left: 30px;
+}
+
+.social {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+}
+
+.social i {
+    font-size: 20px;
+    cursor: pointer;
+    padding: 3px;
+    transition: all 0.2s;
+}
+
+.social i:hover {
+    color: #FECC11;
+}
+
+li {
+    list-style: none;
+    padding: 10px;
+}
+
+/* side_navbar */
+
+/* home_section */
+.home .meal {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.home .meal img {
+    width: 100%;
+    display: block;
+    cursor: pointer;
+}
+
+.home .meal .layer {
+    position: absolute;
+    bottom: -100%;
+    left: 12px;
+    right: 12px;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    transition: all 0.5s;
+    cursor: pointer;
+
+}
+
+.home .meal:hover .layer {
+    bottom: 0;
+}
+
+.home .layer p {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 10px;
+    color: black;
+    font-size: 28px;
+    font-weight: 500;
+    padding-top: 45%;
+}
+
+/* home_section */
+
+
+
+/* search_section */
+.searchSection{
+margin-top: 3%;
+}
+
+.searchInputs input {
+    background-color: #0D0D0D !important;
+    color: white !important;
+}
+
+.searchInputs input:focus {
+    box-shadow: 0 0 5px #FECC11 inset, 0 0 5px #FECC11;
+}
+
+
+.searchInputs ::placeholder {
+    color: #6C757D;
+}
+
+.search .meal {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.search .meal img {
+    width: 100%;
+    display: block;
+    cursor: pointer;
+}
+
+.search .meal .layer {
+    position: absolute;
+    bottom: -100%;
+    left: 12px;
+    right: 12px;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.search .meal:hover .layer {
+    bottom: 0;
+}
+
+.search .layer p {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 10px;
+    color: black;
+    font-size: 28px;
+    font-weight: 500;
+    padding-top: 45%;
+}
+
+/* search_section */
+
+
+
+
+/* categories_section */
+.categories .meal {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.categories .meal img {
+    width: 100%;
+    display: block;
+    cursor: pointer;
+}
+
+.categories .meal .layer {
+    position: absolute;
+    bottom: -100%;
+    left: 11px;
+    right: 11px;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    transition: all 0.5s;
+    cursor: pointer;
+
+}
+
+.categories .meal:hover .layer {
+    bottom: 0;
+}
+
+.categories h3 {
+    font-size: 30px;
+    padding-top: 10px;
+}
+
+.categories .layer p {
+    color: black;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px 0 10px;
+
+
+}
+
+/* categories_section */
+
+/* categoryMeals_section */
+.categoryMeals .meal {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.categoryMeals .meal img {
+    width: 100%;
+    display: block;
+    cursor: pointer;
+}
+
+.categoryMeals .meal .layer {
+    position: absolute;
+    bottom: -100%;
+    left: 12px;
+    right: 12px;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    transition: all 0.5s;
+    cursor: pointer;
+
+}
+
+.categoryMeals .meal:hover .layer {
+    bottom: 0;
+}
+
+.categoryMeals .layer p {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 10px;
+    color: black;
+    font-size: 28px;
+    font-weight: 500;
+    padding-top: 45%;
+}
+
+/* categoryMeals_section */
+
+/* areaMeals_section */
+.areaMeals .meal {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.areaMeals .meal img {
+    width: 100%;
+    display: block;
+    cursor: pointer;
+}
+
+.areaMeals .meal .layer {
+    position: absolute;
+    bottom: -100%;
+    left: 12px;
+    right: 12px;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.areaMeals .meal:hover .layer {
+    bottom: 0;
+}
+
+.areaMeals .layer p {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 10px;
+    color: black;
+    font-size: 28px;
+    font-weight: 500;
+    padding-top: 45%;
+}
+
+/* areaMeals_section */
+
+
+/* ingredientsMeals_section */
+.ingMeals .meal {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.ingMeals .meal img {
+    width: 100%;
+    display: block;
+    cursor: pointer;
+}
+
+.ingMeals .meal .layer {
+    position: absolute;
+    bottom: -100%;
+    left: 12px;
+    right: 12px;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    transition: all 0.5s;
+    cursor: pointer;
+
+}
+
+.ingMeals .meal:hover .layer {
+    bottom: 0;
+}
+
+.ingMeals .layer p {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 10px;
+    color: black;
+    font-size: 28px;
+    font-weight: 500;
+    padding-top: 45%;
+}
+
+/* ingredientsMeals_section */
+
+
+
+
+/* area_section */
+.area i {
+    color: white;
+    font-size: 70px;
+}
+
+
+
+
+.area p {
+    color: white;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.country {
+    width: 20%;
+    padding: 50px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+/* area_section */
+
+/* ingredients_section */
+.ingredients i {
+    color: white;
+    font-size: 70px;
+    margin-bottom: 10px;
+
+}
+
+.ingredient {
+    width: 310px;
+    margin: auto;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+    height: 300px;
+
+
+}
+
+
+.ingredients p {
+    color: white;
+    font-size: 15px;
+    margin: 0;
+}
+
+.ingredients h3 {
+    color: white;
+
+}
+
+
+/* ingredients_section */
+
+
+/* contact_section */
+.contact {
+    margin-top: 30%;
+}
+
+.contact input {
+    background-color: #0D0D0D !important;
+    color: white !important;
+}
+
+
+.contact input:focus {
+    box-shadow: 0 0 5px #FECC11 inset, 0 0 5px #FECC11;
+}
+
+.contact ::placeholder {
+    color: #6C757D;
+}
+
+/* contact_section */
+
+
+
+/* details_section */
+.details img {
+    width: 100%;
+}
+
+.details h5 {
+    background-color: #CFF4FC;
+    color: black;
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 5px;
+    font-size: 18px;
+
+}
+
+.details {
+    position: relative;
+
+}
+
+.details i {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 40px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.details i:hover {
+    color: #FECC11;
+}
+
+.details .tags {
+    background-color: #F8D7DA;
+}
+
+.details .buttons {
+    margin-top: 10px;
+}
+
+/* details_section */
